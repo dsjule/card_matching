@@ -1,0 +1,170 @@
+/**
+CSS file for card matching game.
+Author: David Jule.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:  rgb(41, 41, 41);
+    z-index: -1;
+    background-image: url(./images/backgroundImage.jpg)
+
+}
+
+section {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*CONTAINERS*/
+
+#menuContainer{
+    color: #f1d3a1;
+    width: 70%;
+    height: 80%;
+
+}
+
+/* Form Container */
+#innerContainer{
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+    width: 60%;
+    height: 60%;
+    min-width: 600px;
+    min-height: 800px;
+    border-style: solid;
+    border-color: #a70808;
+    border-radius: 20px;
+    border-width: 5px;
+}
+
+#outerBackground {
+    background-image: url(./images/gameBackground.jpg);
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: #a70808;
+    border-radius: 15px;
+    border-width: 5px;
+}
+
+#player_information_form{
+    width: 50%;
+    display: grid;
+    margin: auto;
+
+}
+
+#Instructions{
+    font-size: 20px;
+}
+
+/* form title */
+#innerContainer h1{
+    font-size: 30px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: #f1d3a1;
+}
+
+#MainTitle {
+    clear: both;
+    text-align: center;
+    color: #f1d3a1;
+    padding-top: 25px;
+}
+
+
+
+/*Table*/
+td {
+    padding: 2%;
+}
+
+.card{
+    width: 90px;
+    height: auto;
+}
+
+.hiddenCard {
+    filter: brightness(0%);
+    width: 90px;
+    height: auto;
+}
+
+table{
+    margin: auto;
+}
+
+/* BUTTONS, LABELS AND INPUT BOXES */
+
+label{
+    padding: 5px 0px;
+}
+
+/* INPUT BOXES */
+input[type=text]{
+    width: 10vw;
+    height: 3vh;
+    margin: auto;
+}
+input[type=number]{
+    width: 10vw;
+    height: 3vh;
+    margin: auto;
+}
+
+input[type=color]{
+    width: 100px;
+    height: 25px;
+    margin: auto;
+}
+
+input[type=submit]{
+    width: 7vw;
+    height: 3vh;
+    margin: auto;
+    color: #f1d3a1;
+    border-radius: 15px;
+    border-color: #f1d3a1;
+    background-color: black;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+input[type=submit]:hover,input[type=submit]:active, input[type=submit]:focus {
+    box-shadow: 0 0 20px black;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*Start Game Button*/
+
+#startGameButton{
+    padding: 10px;
+    border-radius: 15px;
+    color: #f1d3a1;
+    background-color: black;
+    margin-top: 10%;
+    border-color: #f1d3a1;
+}
+
+
